@@ -1,0 +1,134 @@
+body {
+    background-image: url('image/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #93f0fa;
+}
+
+.container {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    padding: 60px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0044;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 70px;
+}
+
+.todo-icon {
+    width:  200px;
+    height: 200px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 3px solid #007BFF;
+    border-radius: 0px;
+}
+
+button {
+    padding: 13px 50px; 
+    border: 10px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+li:hover {
+    background-color: #e0e0e0;
+}
+
+.delete-btn {
+    color: #ff3b30;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+    
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+
+.delete-btn:hover {
+    background-color: #ffdddd;
+}
+
+.delete-icon {
+    margin-right: 0;
+}
+
+li {
+    
+    position: relative;
+}
+
+.task-text {
+    flex: 1;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+.task-text.completed {
+    text-decoration: line-through; 
+}
+
